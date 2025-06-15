@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+interface Props {
+  title: string;
+  description: string;
+  cannonical?: string;
+}
+const { title, description, cannonical } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- <TagManagerHead /> -->
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={`https://rockfish.software${cannonical}`} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- <TagManagerBody /> -->
+    <!-- <Nav /> -->
+    <main class="main-size">
+      <slot />
+    </main>
+    <!-- <Footer /> -->
+  </body>
+</html>
