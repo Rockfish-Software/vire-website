@@ -1,10 +1,100 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import BodyContent from "../components/BodyContent.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 ---
 
 <Layout
   title="Play Vire | Grand Strategy Game that is opensource, free, and lots of fun"
   description="Vire is actively building a community around creating a grand strategy game with endless content and endless fun."
 >
-  <h1 class="text-2xl">Vire</h1>
+  <BodyContent>
+    <SectionContainer>
+      <h1 class="text-2xl">What is Vire?</h1>
+      <h2 class="text-xl">TL;DR</h2>
+      <p>
+        Vire is an open-source, 2D grand strategy game where you can either
+        conquer the world - or build your own.
+      </p>
+      <ul class="pl-4 list-disc ml-4">
+        <li>Play historical or fictional scenarios</li>
+        <li>Create your own with a powerful in-game editor</li>
+        <li>Share content with the community</li>
+      </ul>
+      <h2 class="text-xl">
+        Simple Grand Strategy Game Focused on Customization and Community
+      </h2>
+      <ul class="pl-4 list-disc ml-4">
+        <li>Play deep, strategic scenarios - or invent your own</li>
+        <li>
+          Use an intuitive editor to create nations, maps, tech trees, units,
+          and more.
+        </li>
+        <li>Share your creations in the public content library</li>
+        <li>Play solo or multiplayer.</li>
+      </ul>
+      <p>
+        Whether you're into alernate history, fantasy worldbuilding or just
+        painting the map your favorite color - Vire gives you to the tools to
+        make it happen.
+      </p>
+      <h2 class="text-xl">Features</h2>
+      <h3>Classic Grand Strategy Systems</h3>
+      <ul class="pl-4 list-disc ml-4">
+        <li>Diplomacy, Economy, Military, Research</li>
+        <li>
+          Create alliances, build tech trees, and lead your people to victory
+        </li>
+      </ul>
+      <h3 class="text-lg">AI & Modding</h3>
+      <ul class="pl-4 list-disc ml-4">
+        <li>Built-in behavior trees</li>
+        <li>Advanced users can script thier own AI logic.</li>
+        <li>Open source means full control.</li>
+      </ul>
+      <h3 class="text-lg">Flexible Combat & Units</h3>
+      <ul class="pl-4 list-disc ml-4">
+        <li>
+          Customize unit types (e.g., swordsmen, mechs, dragons, or space
+          marines).
+        </li>
+        <li>Define damage types like pierce, hack, magic, etc.</li>
+      </ul>
+      <h3 class="text-lg">Deep Resource & Economy Management</h3>
+      <ul class="pl-4 list-disc ml-4">
+        <li>Add jobs, buildings and simulate population growth.</li>
+        <li>Create complex economies with custom resource types.</li>
+      </ul>
+      <h3 class="text-lg">Multiplayer & Sharing</h3>
+      <ul class="pl-4 list-disc ml-4">
+        <li>Play single-player against custom AI.</li>
+        <li>Or host/join multiplayer games through our free server.</li>
+        <li>Share your creations in the content library.</li>
+      </ul>
+      <h3 class="text-lg">Development</h3>
+      <p>Vire is in early development</p>
+      <p>You can follow progress through monthly devlogs on this site</p>
+      <ul class="pl-4 list-disc ml-4">
+        <li>Source code is available on GitHub</li>
+        <li>Community builds will be published here once they're stable.</li>
+        <li>Full roadmap and changelog coming soon.</li>
+      </ul>
+      <h3 class="text-lg">Community</h3>
+      <p>
+        We're building more than a game — we're building a space for
+        collaboration and creativity.
+      </p>
+      <ul class="pl-4 list-disc ml-4">
+        <li>
+          Join the <a
+            class="text-blue-600 underline"
+            href="https://discord.gg/t59hty7T"
+            rel="noopener noreferrer">Discord</a
+          > to share feedback, ideas, and memes.
+        </li>
+        <li>Submit your own scenarios or play others'.</li>
+        <li>Help shape hte future of the game.</li>
+      </ul>
+    </SectionContainer>
+  </BodyContent>
 </Layout>
