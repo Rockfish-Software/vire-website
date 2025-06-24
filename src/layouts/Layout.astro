@@ -1,4 +1,5 @@
 ---
+import TagManagerBody from "../components/TagManagerBody.astro";
 import "../styles/global.css";
 interface Props {
   title: string;
@@ -11,7 +12,7 @@ const { title, description, cannonical } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- <TagManagerHead /> -->
+    <TagManagerBody />
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
@@ -22,6 +23,7 @@ const { title, description, cannonical } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-slate-400">
+    <TagManagerBody />
     <!-- <TagManagerBody /> -->
     <!-- <Nav /> -->
     <main class="main-size">
